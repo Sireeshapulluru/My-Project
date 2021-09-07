@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <link rel="stylesheet" href="% static 'css/style.css'%}">
+{% load static %}
+</head>
+<body>
+<h1>Questions</h1>
+  <h2>Welcome to Django!!!</h2>
+  {% block content %}
+{% for i in post %}
+{{i.question_text}}<br>
+{{i.pub_date}}<br>
+{% endfor %}
+{% endblock content %}
+
+</body>
+</html>
